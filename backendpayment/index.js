@@ -32,8 +32,8 @@ app.post("/api/create-checkout-session", async (req, res) => {
       },
     ],
     mode: "payment",
-    success_url: "http://localhost:5173/success",
-    cancel_url: "http://localhost:5173/fail",
+    success_url: "https://paystripe-frontend.vercel.app/success",
+    cancel_url: "https://paystripe-frontend.vercel.app/fail",
   })
 
   res.json({ id: session.id })
