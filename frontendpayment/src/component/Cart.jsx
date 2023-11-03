@@ -17,7 +17,7 @@ export default function Cart() {
             const headers = {
                 "Content-Type": "application/json"
             }
-            const response = await fetch('https://newstripe-three.vercel.app/api/create-checkout-session', {
+            const response = await fetch('https://paystripe.vercel.app/api/create-checkout-session', {
                 method: "POST",
                 headers: headers,
                 body: JSON.stringify(body)
