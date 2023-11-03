@@ -20,7 +20,7 @@ const router = createBrowserRouter(
     </Route>
   )
 );
-function App() {
+function App({router}) {
   // <BrowserRouter>
   //   <Routes>
   //     <Route path="/:id" element={<Cart />}></Route>
