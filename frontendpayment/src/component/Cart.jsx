@@ -1,8 +1,8 @@
 import { loadStripe } from '@stripe/stripe-js';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+// import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 export default function Cart() {
     const {id} = useParams();
     const subtotal=id;
@@ -30,18 +30,18 @@ export default function Cart() {
                 sessionId: session.id,
             });
 
-            if (result.error) {
-                toast.info("your payment is unsuccessfull", {
-                    autoclose: 2000,
-                    position: "top-right"
-                });
-            }
-            else {
-                toast.success("your payment is successfull", {
-                    autoclose: 2000,
-                    position: "top-right"
-                });
-            }
+            // if (result.error) {
+            //     toast.info("your payment is unsuccessfull", {
+            //         autoclose: 2000,
+            //         position: "top-right"
+            //     });
+            // }
+            // else {
+            //     toast.success("your payment is successfull", {
+            //         autoclose: 2000,
+            //         position: "top-right"
+            //     });
+            // }
 
         }
         
