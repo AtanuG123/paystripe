@@ -15,7 +15,7 @@ function App() {
        <BrowserRouter>
        <Routes>
           <Route path="/:id" element={<Cart />}></Route>
-          <Route path="/success" element={<Success/>}></Route>
+          <Route path="/" element={<Success/>}></Route>
           <Route path="/fail" element={<Fail/>}></Route>
      
        </Routes>
@@ -23,7 +23,7 @@ function App() {
       </div>
       
     </>
-  )
+  );
 }
 
 export default App
