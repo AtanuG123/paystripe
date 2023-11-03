@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Cart from './component/Cart';
@@ -15,9 +13,8 @@ function App() {
        <BrowserRouter>
        <Routes>
           <Route path="/:id" element={<Cart />}></Route>
-          <Route path="/" element={<Success/>}></Route>
+          <Route path="/success" element={<Success/>}></Route>
           <Route path="/fail" element={<Fail/>}></Route>
-     
        </Routes>
        </BrowserRouter>
       </div>
