@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 
 export default function Cart() {
     const {id} = useParams();
-    const subtotal=100;
+    const subtotal=id;
     useEffect(()=>{
         makepayment();
     })
